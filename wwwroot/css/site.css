@@ -1,0 +1,163 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  font-family: Arial, sans-serif;
+}
+
+.bg-dark {
+    background-color: #333333 !important;
+}
+
+/* Sidebar Categories */
+.category-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.category-list li {
+    margin-bottom: 8px;
+}
+
+.category-list li::before {
+    content: "•";
+    color: #333;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.category-list a {
+    text-decoration: none;
+    color: #0d6efd;
+}
+.category-list a:hover {
+    text-decoration: underline;
+}
+
+/* Book Card */
+.book-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.book-card .card-header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.book-card .book-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.book-card .book-info {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.book-card .book-info p {
+    margin-bottom: 5px;
+}
+
+.book-card .book-img {
+    text-align: center;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-card .book-img img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.book-card .book-actions {
+    text-align: right;
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+/* Details Page */
+.details-page-img {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+.details-page-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.details-page-info .price {
+    color: #c92127;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.details-page-info .old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+.details-page-info .discount {
+    background-color: #c92127;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+.btn-add-cart {
+    border: 2px solid #c92127;
+    color: #c92127;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.btn-buy-now {
+    background-color: #c92127;
+    color: white;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: none;
+}
+
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
